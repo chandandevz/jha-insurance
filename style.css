@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(229, 73, 12, 0.995);
+    padding: 0px 30px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 14px;
+}
+
+
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger-menu{
+    color: #fff;
+    font-size: 30px;
+}
+
+.burger-container{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+.logo2{
+    width: 180px;
+    height: 120px;
+}
+
+.logo2 img{
+    width: 230px;
+}
+
+.features{
+    display: flex;
+    gap: 80px;
+    margin: 0px 390px;
+}
+
+.images{
+    box-shadow: 0px 0px 18px 10px rgba(0,0,0,0.1);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s ease-in-out;
+}
+
+.img1:hover{
+    transform: rotateY(180deg);
+    background-color: red;
+    transition: 0.9s ease-in-out;
+}
+
+.img2:hover{
+    transform: rotateY(180deg);
+    background-color: rgb(0, 255, 238);
+    transition: 0.9s ease-in-out;
+}
+
+.img3:hover{
+    transform: rotateY(180deg);
+    background-color: greenyellow;
+    transition: 0.9s ease-in-out;
+}
+
+.images img{
+    width: 120px;
+}
+
+.menu2{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.features div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features p{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.main-container{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.insurance-content{
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.insurance-content ul{
+    list-style: disc; 
+    text-decoration: none; 
+    font-weight: lighter;
+}
+
+.insurance-content ol{
+    font-weight: lighter;
+}
+
+.insurance-content p{
+    font-weight: lighter;
+}
+
+h2{
+    padding: 8px;
+    min-width: 600px;
+    background-color: #41eb6c;
+    color: #047b24;
+    margin: 40px 0px;
+    border: 1px solid #000;
+}
+
+h5{
+    color: rgb(7, 88, 170);
+    font-style: italic;
+}
+
+ol ul{
+    margin-left: 40px;
+}
+
+ol ul li{
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .burger-container{
+        display: block;
+    }
+
+    .images{
+        width: 110px;
+        height: 110px;
+    }    
+
+    .logo2{
+        width: 300px;
+    }
+
+    .images img{
+        width: 80px;
+    }
+
+    .features{
+        gap: 30px;
+    }
+
+    nav{
+        padding: 0px 20px;
+    }
+
+    .desktop-menu{
+        display: none;
+    } 
+
+    .mobile-menu{
+        background-color: black;
+        display: block;
+        margin: 1.2px 0px;
+        background-image: url('images/jha-insurance.jpg.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: none;
+    }
+
+    .mobile-menu li{
+        padding: 12px 8px;
+        border-bottom: 0.8px solid white;
+    }
+
+    .show-menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1659px) {
+    .logo2{
+        margin-bottom: 180px;
+    }   
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgba(229, 73, 12, 0.995);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 20px 40px;
+}
+
+td{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    border: 2px dashed #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.6);
+    margin-top: -180px;
+}
+
+.form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+input{
+    width: 100%;
+    padding: 16px 6px;
+    border: 1px solid #ccc;
+}
+
+label{
+    color: #e30505;
+    font-weight: bold;
+}
+
+input, button{
+    border-radius: 25px;
+}
+
+form button{
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    background-color: #e30505;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+form button:hover{
+    background-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.form-heading{
+    width: 100%;
+    padding: 20px;
+    background-color: brown;
+    color: #fff;
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.6);
+}
+
+.form-heading h1{
+    font-size: 50px;
+}

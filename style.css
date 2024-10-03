@@ -182,6 +182,10 @@ ol ul li{
         display: block;
     }
 
+    .main-container{
+        width: 90%;
+    }
+
     th, td{
         padding: 8px;
     }
